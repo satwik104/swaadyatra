@@ -10,4 +10,5 @@ export const cityIndex: CityMeta[] = [
   { name: "Amritsar", slug: "amritsar", count: 15 },
   { name: "Delhi",    slug: "delhi",    count: 17 },
   { name: "Jaipur",   slug: "jaipur",   count: 10 },
+  { name: "Varanasi", slug: "varanasi", count: 19 },
 ];

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import VendorSection from "@/components/VendorSection";
 import { MessageCircle, ChevronDown, Send } from "lucide-react";
+import { useFormSubmit } from "@/hooks/useFormSubmit";
 
 const faqs = [
   {
@@ -50,13 +51,10 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 type FormState = { name: string; email: string; city: string; subject: string; message: string };
-type Status = "idle" | "loading" | "success" | "error";
 
 function ContactForm() {
   const [form, setForm] = useState<FormState>({ name: "", email: "", city: "", subject: "", message: "" });
   const [errors, setErrors] = useState<Partial<FormState>>({});
-  const [status, setStatus] = useState<Status>("idle");
-  const [apiMessage, setApiMessage] = useState("");
 
   const validate = (): Partial<FormState> => {
     const e: Partial<FormState> = {};
@@ -69,37 +67,23 @@ function ContactForm() {
     return e;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const { status, apiMessage, submit, reset } = useFormSubmit<FormState>({
+    url: "/api/contact",
+    headers: { "Content-Type": "application/json" },
+    onSuccess: () => { setForm({ name: "", email: "", city: "", subject: "", message: "" }); setErrors({}); },
+    buildBody: (data) => JSON.stringify({
+      name: data.name,
+      email: data.email,
+      subject: data.subject,
+      message: `City: ${data.city}\n\n${data.message}`,
+    }),
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length) { setErrors(errs); return; }
-
-    setStatus("loading");
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          subject: form.subject,
-          message: `City: ${form.city}\n\n${form.message}`,
-        }),
-      });
-      const data = await res.json();
-      if (res.ok && data.success) {
-        setStatus("success");
-        setApiMessage(data.message);
-        setForm({ name: "", email: "", city: "", subject: "", message: "" });
-        setErrors({});
-      } else {
-        setStatus("error");
-        setApiMessage(data.message || "Something went wrong. Please try again.");
-      }
-    } catch {
-      setStatus("error");
-      setApiMessage("Something went wrong. Please try again.");
-    }
+    submit(form);
   };
 
   const field = (id: keyof FormState, label: string, type = "text", placeholder = "") => (
@@ -125,7 +109,7 @@ function ContactForm() {
           </div>
           <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
           <p className="text-gray-500 text-base">{apiMessage}</p>
-          <button onClick={() => setStatus("idle")} className="mt-5 text-[#E23744] font-semibold hover:underline text-base">
+          <button onClick={reset} className="mt-5 text-[#E23744] font-semibold hover:underline text-base">
             Send another message
           </button>
         </div>

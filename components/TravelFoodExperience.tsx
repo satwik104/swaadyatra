@@ -122,7 +122,7 @@ export default function TravelFoodExperience() {
               </div>
 
               {/* Quote */}
-              <p className="text-gray-700 text-sm leading-relaxed italic">
+              <p className="text-gray-700 text-base leading-relaxed">
                 &quot;{story.quote}&quot;
               </p>
             </div>

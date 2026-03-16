@@ -1,5 +1,13 @@
 {
   "city": "Delhi",
+  "hero": {
+    "tagline": "From Chandni Chowk to Connaught Place — Delhi's streets have fed legends for centuries.",
+    "highlights": [
+      "17 iconic food spots across Old & New Delhi",
+      "Home of India's most famous Chole Bhature",
+      "Street food trails from Red Fort to Kamla Nagar"
+    ]
+  },
   "foodSpots": [
     {
       "shopName": "Lotan Ji Chole Kulche",

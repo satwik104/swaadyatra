@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     "SwaadYatra helps travelers discover the best street food spots, famous local dishes, and authentic eateries near top tourist places across India.",
   keywords:
     "best street food in India, food travel guide India, famous food spots Indian cities, street food near tourist places, authentic Indian food, food discovery platform India",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/manifest.json",
   openGraph: {
     siteName: "SwaadYatra",
     type: "website",
@@ -49,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plusJakarta.variable} antialiased`}>
+      <body className={`${plusJakarta.variable} antialiased`} suppressHydrationWarning>
         {children}
       </body>
     </html>

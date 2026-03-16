@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import { esc, rateLimit } from "@/lib/apiUtils";
+import { esc, rateLimit, checkCsrf, isAllowedImageMime } from "@/lib/apiUtils";
+import "@/lib/env";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -9,6 +10,9 @@ const MAX_FILES = 5;
 
 export async function POST(req: NextRequest) {
   try {
+    const csrfError = checkCsrf(req);
+    if (csrfError) return NextResponse.json({ success: false, message: csrfError }, { status: 403 });
+
     const ip = req.headers.get("x-forwarded-for") ?? "unknown";
     if (!rateLimit(ip, 3)) {
       return NextResponse.json({ success: false, message: "Too many requests. Please try again later." }, { status: 429 });
@@ -38,6 +42,10 @@ export async function POST(req: NextRequest) {
     for (const file of validImages) {
       if (file.size > MAX_FILE_SIZE) {
         return NextResponse.json({ success: false, message: `Each image must be under 5 MB. "${file.name}" exceeds the limit.` }, { status: 400 });
+      }
+      const allowed = await isAllowedImageMime(file);
+      if (!allowed) {
+        return NextResponse.json({ success: false, message: `"${file.name}" is not a valid image file.` }, { status: 400 });
       }
     }
 

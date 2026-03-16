@@ -97,7 +97,7 @@ export default function StoryCards() {
 
       {/* Full-page story panels */}
       {stories.map((s, i) => (
-        <div key={s.name} className="relative w-full h-screen min-h-[600px] flex flex-col justify-end">
+        <div key={s.name} className="relative w-full h-[100dvh] min-h-[600px] flex flex-col justify-end">
 
           {/* Full-bleed background photo */}
           <Image

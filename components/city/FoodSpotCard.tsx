@@ -1,5 +1,6 @@
 import { MapPin, IndianRupee, Navigation, Lightbulb, Route } from "lucide-react";
 import ImageCarousel from "./ImageCarousel";
+import ExpandableDescription from "./ExpandableDescription";
 
 export interface FoodSpot {
   shopName: string;
@@ -55,7 +56,7 @@ export default function FoodSpotCard({ spot, index }: { spot: FoodSpot; index: n
           </div>
 
           {/* Description */}
-          <p className="text-gray-600 text-sm leading-relaxed">{spot.description}</p>
+          <ExpandableDescription text={spot.description} />
 
           {/* Tips — highlighted traveler tip */}
           <div className="flex items-start gap-2 bg-amber-50 border border-amber-200 rounded-2xl px-4 py-3">
@@ -64,19 +65,19 @@ export default function FoodSpotCard({ spot, index }: { spot: FoodSpot; index: n
               <span className="text-xs font-bold text-amber-600 uppercase tracking-wide block mb-0.5">
                 Traveler Tip
               </span>
-              <p className="text-amber-800 text-sm">{spot.tips}</p>
+              <p className="text-amber-800 text-base leading-relaxed">{spot.tips}</p>
             </div>
           </div>
 
           {/* Full address */}
-          <div className="flex items-start gap-1.5 text-gray-600 text-sm">
-            <Navigation className="w-4 h-4 text-gray-400 shrink-0 mt-0.5" />
+          <div className="flex items-start gap-1.5 text-gray-600 text-base">
+            <Navigation className="w-4 h-4 text-gray-400 shrink-0 mt-1" />
             <span>{spot.fullAddress}</span>
           </div>
 
           {/* Route details */}
-          <div className="flex items-start gap-1.5 text-gray-600 text-sm">
-            <Route className="w-4 h-4 text-gray-400 shrink-0 mt-0.5" />
+          <div className="flex items-start gap-1.5 text-gray-600 text-base">
+            <Route className="w-4 h-4 text-gray-400 shrink-0 mt-1" />
             <span>{spot.routeDetails}</span>
           </div>
 

@@ -101,7 +101,7 @@ const cities = [
   },
 ];
 
-const completedCities = ["delhi", "jaipur", "amritsar"];
+const completedCities = ["delhi", "jaipur", "amritsar", "varanasi"];
 
 export default function FeaturedCities() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -203,7 +203,7 @@ export default function FeaturedCities() {
               return (
                 <div
                   key={cityIndex}
-                  className="flex-shrink-0 w-[200px] md:w-[240px] lg:w-[280px] cursor-pointer transform transition-transform duration-300 hover:scale-105"
+                  className="flex-shrink-0 w-[75vw] max-w-[260px] md:w-[240px] lg:w-[280px] cursor-pointer transform transition-transform duration-300 hover:scale-105"
                 >
                   {isCompleted ? (
                     <Link href={`/city/${city.name.toLowerCase()}`}>{cardContent}</Link>

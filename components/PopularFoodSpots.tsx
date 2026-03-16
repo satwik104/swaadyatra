@@ -10,6 +10,7 @@ const completedCities: Record<string, string> = {
   Amritsar: "/city/amritsar",
   Delhi: "/city/delhi",
   Jaipur: "/city/jaipur",
+  Varanasi: "/city/varanasi",
 };
 
 const foodSpots = [
@@ -28,21 +29,21 @@ export default function PopularFoodSpots() {
   return (
     <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        <div className="mb-10 md:mb-14 text-center">
+        <div className="mb-10 md:mb-14">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
             Popular Food Spots
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 text-lg max-w-2xl">
             Discover iconic dishes from India&apos;s most famous food destinations
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {foodSpots.map((food, index) => {
             const href = completedCities[food.city];
             const card = (
               <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div className="relative h-[320px] overflow-hidden">
+                <div className="relative h-[260px] sm:h-[300px] md:h-[280px] lg:h-[320px] overflow-hidden">
                   <Image
                     src={food.image}
                     alt={`${food.name} at ${food.shop}, ${food.city}`}
@@ -50,14 +51,15 @@ export default function PopularFoodSpots() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  {/* Always-visible gradient so text is readable on all devices */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                   <div className="absolute top-4 right-4 bg-[#FFC107] text-gray-900 px-4 py-1.5 rounded-full text-sm font-bold shadow-lg">
                     {food.city}
                   </div>
-                  <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                  <div className="absolute inset-0 flex flex-col justify-end p-6">
                     <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">{food.name}</h3>
-                    <div className="flex items-center gap-2 text-white/90">
-                      <svg className="w-5 h-5 text-[#FFC107]" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="flex items-center gap-2 text-white">
+                      <svg className="w-5 h-5 text-[#FFC107] shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                         <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                       </svg>
                       <span className="text-sm md:text-base font-semibold">{food.shop}</span>

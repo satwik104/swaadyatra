@@ -2,39 +2,27 @@
 
 import { useState } from "react";
 import { Send } from "lucide-react";
+import { useFormSubmit } from "@/hooks/useFormSubmit";
+
+type StoryForm = { name: string; email: string; story: string };
 
 export default function EmailSubmit() {
-  const [form, setForm] = useState({ name: "", email: "", story: "" });
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [message, setMessage] = useState("");
+  const [form, setForm] = useState<StoryForm>({ name: "", email: "", story: "" });
+
+  const { status, apiMessage, submit } = useFormSubmit<StoryForm>({
+    url: "/api/story",
+    headers: { "Content-Type": "application/json" },
+    onSuccess: () => setForm({ name: "", email: "", story: "" }),
+    buildBody: (data) => JSON.stringify(data),
+  });
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setStatus("loading");
-    setMessage("");
-
-    try {
-      const res = await fetch("/api/story", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-      const data = await res.json();
-      if (data.success) {
-        setStatus("success");
-        setForm({ name: "", email: "", story: "" });
-      } else {
-        setStatus("error");
-        setMessage(data.message || "Something went wrong.");
-      }
-    } catch {
-      setStatus("error");
-      setMessage("Something went wrong. Please try again.");
-    }
+    submit(form);
   }
 
   return (
@@ -92,7 +80,7 @@ export default function EmailSubmit() {
               className="w-full px-5 py-3.5 rounded-2xl bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/60 shadow-md resize-none"
             />
             {status === "error" && (
-              <p className="text-white bg-white/20 rounded-xl px-4 py-2 text-sm">{message}</p>
+              <p className="text-white bg-white/20 rounded-xl px-4 py-2 text-sm">{apiMessage}</p>
             )}
             <button
               type="submit"

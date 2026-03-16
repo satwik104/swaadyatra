@@ -1,5 +1,13 @@
 {
   "city": "Amritsar",
+  "hero": {
+    "tagline": "Every lane near the Golden Temple tells a story of butter, tandoor, and pure Punjabi soul.",
+    "highlights": [
+      "15 legendary food spots near Golden Temple & Heritage Street",
+      "Home of the world-famous Amritsari Kulcha",
+      "From Kesar Da Dhaba's dal makhani to Gurdas Ram's ghee jalebis"
+    ]
+  },
   "foodSpots": [
     {
       "shopName": "Sunny Tikki Wala",

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import { esc, rateLimit } from "@/lib/apiUtils";
+import { esc, rateLimit, checkCsrf } from "@/lib/apiUtils";
+import "@/lib/env";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -23,6 +24,9 @@ function validate(data: ContactPayload): string | null {
 
 export async function POST(req: NextRequest) {
   try {
+    const csrfError = checkCsrf(req);
+    if (csrfError) return NextResponse.json({ success: false, message: csrfError }, { status: 403 });
+
     const ip = req.headers.get("x-forwarded-for") ?? "unknown";
     if (!rateLimit(ip)) {
       return NextResponse.json({ success: false, message: "Too many requests. Please try again later." }, { status: 429 });

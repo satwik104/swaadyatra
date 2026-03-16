@@ -1,5 +1,13 @@
 {
   "city": "Jaipur",
+  "hero": {
+    "tagline": "The Pink City serves royal flavours — from Dal Baati Churma to saffron-laced sweets.",
+    "highlights": [
+      "10 curated food spots across Jaipur's heritage markets",
+      "Authentic Rajasthani thalis near Hawa Mahal & MI Road",
+      "From Masala Chowk jalebis to Chokhi Dhani feasts"
+    ]
+  },
   "foodSpots": [
     {
       "shopName": "Gulab Ji Chai Wale",

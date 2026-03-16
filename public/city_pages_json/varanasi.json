@@ -1,0 +1,269 @@
+{
+  "city": "Varanasi",
+  "hero": {
+    "tagline": "On the ghats of the Ganga, every bite carries centuries of Banarasi tradition.",
+    "highlights": [
+      "19 authentic food spots from Kachori Gali to Assi Ghat",
+      "Try the legendary Tamatar Chaat, Malaiyo & Blue Lassi",
+      "Street food trails near Dashashwamedh Ghat & Kashi Vishwanath"
+    ]
+  },
+  "foodSpots": [
+    {
+      "shopName": "Ram Bhandar",
+      "images": [
+        "varan_ram_2_qiln7l",
+        "varan_ram_1_okmgbo"
+      ],
+      "dishName": "Badi Kachori Sabzi",
+      "avgPrice": "₹40–60",
+      "touristPlaceNearby": "Kashi Vishwanath Temple",
+      "distanceFromTouristPlace": "~800 m",
+      "description": "Ram Bhandar is one of the oldest and most famous street food shops in Varanasi, established in 1888. Located near the Kashi Vishwanath Temple area, it is best known for its crispy Badi Kachori served with spicy Banarasi style potato and chickpea curry. This traditional breakfast dish is a must-try for anyone exploring the old lanes of Banaras and looking for authentic Varanasi street food.",
+      "tips": "Best visited early morning for authentic Banarasi breakfast. Kachori often sells out before 10 AM due to heavy local demand.",
+      "fullAddress": "Ram Bhandar, Thatheri Bazaar, Chowk, Varanasi, Uttar Pradesh",
+      "routeDetails": "Walk from Kashi Vishwanath Temple toward Chowk market and enter Thatheri Bazaar lane inside the old city food market.",
+      "mapLink": "https://maps.google.com/?q=Ram+Bhandar+Varanasi"
+    },
+    {
+      "shopName": "Lakshmi Chai Wala",
+      "images": [
+        "varan_lakshmi_2_hwrznr",
+        "varan_lakshmi_1_zeccaf"
+      ],
+      "dishName": "Malai Toast",
+      "avgPrice": "₹30–50",
+      "touristPlaceNearby": "Dashashwamedh Ghat",
+      "distanceFromTouristPlace": "~500 m",
+      "description": "Lakshmi Chai Wala near Godowlia Chowk serves one of the most popular Banarasi breakfast snacks — Malai Toast. Fresh bread slices are grilled and topped with thick malai and sugar, creating a creamy sweet flavor that perfectly complements traditional Banarasi chai. A great stop for tourists exploring Dashashwamedh Ghat and the nearby markets.",
+      "tips": "Perfect morning snack with chai after visiting Dashashwamedh Ghat or attending Ganga Aarti.",
+      "fullAddress": "Lakshmi Chai Wala, Godowlia Chowk, Varanasi, Uttar Pradesh",
+      "routeDetails": "Walk from Dashashwamedh Ghat toward Godowlia Chowk main market; the stall is located near the busy street corner.",
+      "mapLink": "https://maps.google.com/?q=Lakshmi+Chai+Wala+Varanasi"
+    },
+    {
+      "shopName": "Gauri Shankar Kachori Wale",
+      "images": [
+        "varan_gauri_2_mmqitb",
+        "varan_gauri_1_xricrn"
+      ],
+      "dishName": "Hing Kachori",
+      "avgPrice": "₹30–40",
+      "touristPlaceNearby": "Kashi Vishwanath Temple",
+      "distanceFromTouristPlace": "~700 m",
+      "description": "Gauri Shankar Kachori Wale is a legendary Varanasi street food stall famous for its flavorful Hing Kachori. These small crispy kachoris are infused with asafoetida (hing) and served crushed with spicy chickpea curry, potatoes, chutney, and radish toppings. It is one of the most authentic breakfast dishes to try while exploring the old Banaras food streets.",
+      "tips": "Best eaten fresh in the morning. Ideal stop while exploring Vishwanath Gali and the Chowk food lanes.",
+      "fullAddress": "Gauri Shankar Kachori Wale, Chowk Area, Varanasi, Uttar Pradesh",
+      "routeDetails": "Walk from Vishwanath Gali toward Chowk market where several traditional food stalls are located.",
+      "mapLink": "https://maps.google.com/?q=Gauri+Shankar+Kachori+Varanasi"
+    },
+    {
+      "shopName": "Blue Lassi Shop",
+      "images": ["varan_blue_2_bdxs4f","varan_blue_1_dnj73t"],
+      "dishName": "Dry Fruit Lassi",
+      "avgPrice": "₹80–120",
+      "touristPlaceNearby": "Manikarnika Ghat",
+      "distanceFromTouristPlace": "~400 m",
+      "description": "Blue Lassi Shop is one of the most famous dessert and drink spots in Varanasi, located inside the iconic Kachori Gali. Known worldwide among travelers, this shop serves thick creamy lassi topped with malai and dry fruits like almonds, pistachios, and cashews. It is a refreshing drink after walking through the historic ghats of Banaras.",
+      "tips": "Perfect refreshment after visiting Manikarnika Ghat or exploring the narrow food streets of the old city.",
+      "fullAddress": "Blue Lassi Shop, Kachori Gali, Varanasi, Uttar Pradesh",
+      "routeDetails": "From Manikarnika Ghat walk into the famous Kachori Gali street where the shop is easily recognizable.",
+      "mapLink": "https://maps.google.com/?q=Blue+Lassi+Shop+Varanasi"
+    },
+    {
+      "shopName": "Kashi Chaat Bhandar",
+      "images": ["varan_kashi_2_xxtj9v","varan_tamatarchaat_w6pzg0"],
+      "dishName": "Tamatar Chaat",
+      "avgPrice": "₹40–70",
+      "touristPlaceNearby": "Dashashwamedh Ghat",
+      "distanceFromTouristPlace": "~300 m",
+      "description": "Kashi Chaat Bhandar is one of the most famous street food destinations in Varanasi known for its iconic Tamatar Chaat. This Banarasi specialty is made from mashed tomatoes cooked with spices, potatoes and chutneys, creating a tangy, spicy and slightly sweet flavor. It is considered one of the best street foods to try near Dashashwamedh Ghat.",
+      "tips": "Best enjoyed in the evening when the street food market near Godowlia becomes lively.",
+      "fullAddress": "Kashi Chaat Bhandar, Godowlia Chowk, Varanasi, Uttar Pradesh",
+      "routeDetails": "Walk from Dashashwamedh Ghat toward Godowlia Chowk main road.",
+      "mapLink": "https://maps.google.com/?q=Kashi+Chaat+Bhandar"
+    },
+    {
+      "shopName": "Gama Paan Bhandar",
+      "images": ["varan_gama_2_s35ano"],
+      "dishName": "Banarasi Meetha Paan",
+      "avgPrice": "₹30–50",
+      "touristPlaceNearby": "Dashashwamedh Ghat",
+      "distanceFromTouristPlace": "~300 m",
+      "description": "Gama Paan Bhandar is one of the best places in Varanasi to try the legendary Banarasi Meetha Paan. Prepared with betel leaves filled with gulkand, sweet fillings and silver foil, this traditional mouth freshener is a classic part of Banaras food culture.",
+      "tips": "Try after enjoying street food at Godowlia or after dinner near the ghats.",
+      "fullAddress": "Gama Paan Bhandar, Godowlia, Varanasi, Uttar Pradesh",
+      "routeDetails": "Located near popular street food stalls in the Godowlia market area.",
+      "mapLink": "https://maps.google.com/?q=Gama+Paan+Bhandar"
+    },
+    {
+      "shopName": "Chachi Ki Kachori",
+      "images": ["varan_chachi_1_xe2fmb"],
+      "dishName": "Kachori Sabzi with Jalebi",
+      "avgPrice": "₹60",
+      "touristPlaceNearby": "BHU / Lanka Chowk",
+      "distanceFromTouristPlace": "~400 m from BHU Gate",
+      "description": "Chachi Ki Kachori is one of the most famous breakfast places in Varanasi, located near the BHU Lanka area. Their crispy urad dal kachori served with spicy potato curry and hot jalebi is a legendary Banarasi breakfast loved by students and tourists alike.",
+      "tips": "Arrive early morning around 6–9 AM to enjoy fresh kachori before the rush.",
+      "fullAddress": "Chachi Ki Kachori, Lanka Chowk near Ravidas Gate, Varanasi",
+      "routeDetails": "Walk from BHU Lanka Gate toward Ravidas Gate where the shop is located in the busy street food area.",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Chachi+Ki+Kachori+Lanka+Varanasi"
+    },
+    {
+      "shopName": "Pizzeria Vaatika Cafe",
+      "images": ["varanasi_pizzeria_1_k7iqmf","varanasi_pizzeria_applepie_rpdckp","varanasi_pizzeria_pizza_fhllrd"],
+      "dishName": "Apple Pie with Vanilla Ice Cream",
+      "avgPrice": "₹160",
+      "touristPlaceNearby": "Assi Ghat",
+      "distanceFromTouristPlace": "~50 m",
+      "description": "Pizzeria Vaatika Cafe at Assi Ghat is one of the most scenic cafes in Varanasi known for its famous apple pie served hot with vanilla ice cream. With stunning views of the Ganga river, this dessert spot is extremely popular among travelers looking for the best cafes in Varanasi.",
+      "tips": "Best visited during sunset at Assi Ghat for a beautiful river view while enjoying dessert.",
+      "fullAddress": "Pizzeria Vaatika Cafe, Assi Ghat, Varanasi",
+      "routeDetails": "Walk along the Assi Ghat riverfront lane to reach the cafe facing the Ganga river.",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Pizzeria+Vaatika+Cafe+Assi+Ghat+Varanasi"
+    },
+    {
+      "shopName": "Mishrambu Thandai",
+      "images": ["varan_mishrambu_2_h3ybpp","varan_mishrambu_1_ce9okk"],
+      "dishName": "Banarasi Thandai",
+      "avgPrice": "₹90–₹200",
+      "touristPlaceNearby": "Godowlia Chowk",
+      "distanceFromTouristPlace": "At Godowlia Chowk",
+      "description": "Mishrambu Thandai is one of the most iconic drink spots in Varanasi known for its traditional Banarasi Thandai made with milk, dry fruits, fennel seeds and aromatic spices. This refreshing drink has been a part of Banaras culture for generations.",
+      "tips": "Best enjoyed in the afternoon while exploring Godowlia market and nearby ghats.",
+      "fullAddress": "Mishrambu Thandai, Godowlia Chowk, Varanasi",
+      "routeDetails": "Located at the central Godowlia intersection close to major tourist areas.",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Mishrambu+Thandai+Varanasi"
+    },
+    {
+    "shopName": "Mahadev Lal Peda Bhandar",
+    "images": ["varan_mahadev_2_rd10ss","varan_mahadev_1_dck8dj"],
+    "dishName": "Lal Peda",
+    "avgPrice": "₹440 per kg",
+    "touristPlaceNearby": "Lanka Chowk",
+    "distanceFromTouristPlace": "~400 m from BHU Gate",
+    "description": "Mahadev Lal Peda Bhandar is one of the most well-known sweet shops in the Lanka area of Varanasi, famous for its traditional Lal Peda. This Banarasi sweet is made from slow-cooked khoya and sugar, giving it a rich caramelized flavor and slightly grainy texture. It’s a popular takeaway dessert for visitors exploring the BHU and Lanka Chowk food streets.",
+    "tips": "A great dessert stop after breakfast at nearby street food stalls. Many visitors buy Lal Peda here as a traditional Varanasi sweet souvenir.",
+    "fullAddress": "Mahadev Lal Peda Bhandar, Opposite Chachi Ki Kachori, Lanka Chowk, Varanasi, Uttar Pradesh",
+    "routeDetails": "Located directly opposite Chachi Ki Kachori in the busy Lanka Chowk market area.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Mahadev+Lal+Peda+Bhandar+Lanka+Varanasi"
+  },
+  {
+    "shopName": "VT Chole Samosa Stall",
+    "images": ["varan_vt_2_ofjogl","varan_vt_1_anmkrc"],
+    "dishName": "Chole Samosa",
+    "avgPrice": "₹25 plate",
+    "touristPlaceNearby": "BHU Campus",
+    "distanceFromTouristPlace": "Inside BHU campus",
+    "description": "VT Chole Samosa Stall inside the Banaras Hindu University campus is a famous student street food spot. The dish features crispy samosas topped with spicy chickpea curry and tangy chutneys, creating a flavorful and filling snack loved by generations of BHU students and visitors.",
+    "tips": "Best enjoyed as an evening snack while exploring BHU campus or after visiting the New Vishwanath Temple inside the university.",
+    "fullAddress": "VT Chole Samosa Stall, Near Vishwanath Temple Area, BHU Campus, Varanasi, Uttar Pradesh",
+    "routeDetails": "After visiting the BHU Vishwanath Temple, walk toward the VT food stalls area inside the campus.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=VT+Chole+Samosa+BHU+Varanasi"
+  },
+  {
+    "shopName": "Om Cold Coffee Corner",
+    "images": ["varan_omcoffee_2_o7slyu","varan_omcoffee_1_jnlvzs"],
+    "dishName": "Cold Coffee",
+    "avgPrice": "₹40–₹50",
+    "touristPlaceNearby": "BHU Area",
+    "distanceFromTouristPlace": "Inside BHU campus",
+    "description": "Om Cold Coffee Corner is a small but popular refreshment spot inside the BHU campus known for its creamy cold coffee topped with ice cream. It is a favorite among students and visitors looking for a quick and refreshing break after exploring the university area.",
+    "tips": "Pairs well with nearby street snacks like samosa or chaat. Evening hours are usually the busiest with students.",
+    "fullAddress": "Om Cold Coffee Corner, Near VT Area, BHU Campus, Varanasi, Uttar Pradesh",
+    "routeDetails": "Located close to the VT Chole Samosa stalls inside the BHU campus.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Om+Cold+Coffee+Corner+BHU+Varanasi"
+  },
+  {
+    "shopName": "Shri Ji",
+    "images": ["varanasi_ShriJi_maliyo_jjhkjz","varan_malaiyo_1_vbmwmx"],
+    "dishName": "Malaiyo",
+    "avgPrice": "₹50",
+    "touristPlaceNearby": "Shri Kaal Bhairav Mandir",
+    "distanceFromTouristPlace": "2Km",
+    "description": "Malaiyo is one of the most unique winter desserts of Varanasi, available only during the colder months. Made from churned milk foam flavored with saffron and cardamom, this delicate sweet has an incredibly light and airy texture. Vendors in Thatheri Bazaar serve freshly prepared Malaiyo in the morning, making it a must-try seasonal delicacy while exploring the old city lanes.",
+    "tips": "Available mainly from November to February.Visit before 3pm as they stop serving it after this time, try their Rabdi and Malai sandwiches as wel ",
+    "fullAddress": "k 26, 17, choukhamba, Varanasi, Uttar Pradesh 221001",
+    "routeDetails": "Walk through the narrow food streets of Thatheri Bazaar near Vishwanath Temple to find Malaiyo vendors.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Shreeji+-+Sweets+%26+Milk%2C+k+26%2C+17%2C+choukhamba%2C+Varanasi%2C+Uttar+Pradesh+221001%2C+India&query_place_id=ChIJYyJqaSIujjkRGzY7Bi0zx38"
+  },
+  {
+    "shopName": "Ashish Yadav Uttapam Stall",
+    "images": ["varan_ashish_2_jgonrv","varan_ashish_1_fgljop"],
+    "dishName": "Butter Uttapam",
+    "avgPrice": "₹60",
+    "touristPlaceNearby": "Godowlia Chowk / Kashi Vishwanath Temple",
+    "distanceFromTouristPlace": "~400 m",
+    "description": "Ashish Yadav Uttapam Stall near Nandi Circle is known for serving delicious butter-loaded uttapam topped with fresh vegetables. This South Indian style breakfast has become a popular quick meal for visitors exploring the Godowlia and Kashi Vishwanath Temple area.",
+    "tips": "Good breakfast option before heading toward the ghats or temple area. The stall usually opens around 7 AM.",
+    "fullAddress": "Ashish Yadav Uttapam Stall, Nandi Circle, Godowlia Market, Varanasi, Uttar Pradesh",
+    "routeDetails": "Walk from Kashi Vishwanath Temple toward Godowlia Chowk near Nandi Circle.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Ashish+Yadav+Uttapam+Godowlia+Varanasi"
+  },
+  {
+    "shopName": "Raju Idli Stall",
+    "images": ["varan_raju_2_lzccqy","varan_raju_1_fara94"],
+    "dishName": "Idli with Chutney",
+    "avgPrice": "₹20",
+    "touristPlaceNearby": "Kedar Ghat",
+    "distanceFromTouristPlace": "~200 m",
+    "description": "Raju Idli Stall near Kedar Ghat serves soft steamed idlis with flavorful chutney, offering a light and affordable snack option in the old city area. It is a simple yet popular breakfast stop for locals and travelers walking between the ghats.",
+    "tips": "Ideal for a quick and light breakfast while exploring the ghats. Usually available until afternoon.",
+    "fullAddress": "Raju Idli Stall, Kedar Ghat Road, Varanasi, Uttar Pradesh",
+    "routeDetails": "Located at the entrance lane leading toward Kedar Ghat.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Raju+Idli+Kedar+Ghat+Varanasi"
+  },
+  {
+    "shopName": "Kerala Cafe",
+    "images": ["varan_kerala_2_hajba6","varan_raju_1_fara94"],
+    "dishName": "Rava Onion Masala Dosa",
+    "avgPrice": "₹130",
+    "touristPlaceNearby": "Godowlia / Dashashwamedh Ghat",
+    "distanceFromTouristPlace": "~700 m",
+    "description": "Kerala Cafe near Godowlia Chowk is known for its crispy rava onion masala dosa served with sambar and coconut chutney. The restaurant offers a good South Indian meal option for visitors exploring Dashashwamedh Ghat and the surrounding markets.",
+    "tips": "Suitable for breakfast or lunch while exploring the Godowlia and Dashashwamedh Ghat area.",
+    "fullAddress": "Kerala Cafe, Near Godowlia Chowk, Varanasi, Uttar Pradesh",
+    "routeDetails": "Walk from Dashashwamedh Ghat toward the Godowlia main road.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Kerala+Cafe+Varanasi"
+  },
+  {
+    "shopName": "Baati Chokha Restaurant",
+    "images": ["varan_baati_2_bjqb0c","varan_baati_1_surnkp"],
+    "dishName": "Baati Chokha Thali",
+    "avgPrice": "₹150–₹250",
+    "touristPlaceNearby": "Varanasi Junction",
+    "distanceFromTouristPlace": "~600 m",
+    "description": "Baati Chokha Restaurant near Varanasi Junction serves a traditional Baati Chokha thali inspired by the regional cuisine of eastern Uttar Pradesh and Bihar. The meal includes roasted baati served with chokha, dal, and ghee, making it a satisfying and authentic lunch or dinner option.",
+    "tips": "Great place for a filling meal before or after train travel from Varanasi Junction.",
+    "fullAddress": "Baati Chokha Restaurant, Telia Bagh, Near Varanasi Junction, Varanasi, Uttar Pradesh",
+    "routeDetails": "From Varanasi Junction take a short auto ride toward Telia Bagh market.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Baati+Chokha+Restaurant+Telia+Bagh+Varanasi"
+  },
+  {
+    "shopName": "Rajbandhu Sweets",
+    "images": ["varan_rajbandhu_2_ulrbrd","varan_rajbandhu_1_kmi4pg"],
+    "dishName": "Long Latta",
+    "avgPrice": "₹40–₹60",
+    "touristPlaceNearby": "Godowlia Chowk",
+    "distanceFromTouristPlace": "~300 m from Dashashwamedh Ghat",
+    "description": "Rajbandhu Sweets is a well-known sweet shop in the Godowlia market area famous for Long Latta, a traditional Banarasi dessert. This sweet is stuffed with khoya and dry fruits and soaked in sugar syrup, offering a rich taste loved by locals and visitors.",
+    "tips": "A good dessert stop after enjoying street food around Dashashwamedh Ghat or Godowlia market.",
+    "fullAddress": "Rajbandhu Sweets, Godowlia Chowk, Varanasi, Uttar Pradesh",
+    "routeDetails": "Located in the busy Godowlia market area near the ghats.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Rajbandhu+Sweets+Varanasi"
+  },
+  {
+    "shopName": "Kumar Ji Sprout Chaat Stall",
+    "images": ["varan_kumar_1_vu62ql"],
+    "dishName": "Sprouted Chana Chaat",
+    "avgPrice": "₹20",
+    "touristPlaceNearby": "Godowlia Chowk",
+    "distanceFromTouristPlace": "At Godowlia Market",
+    "description": "Kumar Ji Sprout Chaat Stall serves a simple yet flavorful sprouted chana chaat made with chickpeas, potatoes and spices. It is a lighter street snack option compared to fried chaat and is popular among locals shopping in the Godowlia market area.",
+    "tips": "Good evening snack while walking through the busy Godowlia shopping streets.",
+    "fullAddress": "Kumar Ji Sprout Chaat Stall, Under Kanhaiya Swarn Kala Kendra, Godowlia Chowk, Varanasi",
+    "routeDetails": "Located under the Kanhaiya Swarn Kala Kendra building in the Godowlia market area.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Kumar+Ji+Sprout+Chaat+Godowlia+Varanasi"
+  }
+  ]
+}

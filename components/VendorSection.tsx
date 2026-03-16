@@ -3,11 +3,12 @@
 import { useState } from "react";
 import { Upload, X, Send } from "lucide-react";
 import Image from "next/image";
+import { useFormSubmit } from "@/hooks/useFormSubmit";
 
-type Status = "idle" | "loading" | "success" | "error";
+type VendorForm = { vendorName: string; foodSpotName: string; city: string; famousFood: string; contactNumber: string; description: string; };
 
 export default function VendorSection() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<VendorForm>({
     vendorName: "",
     foodSpotName: "",
     city: "",
@@ -17,8 +18,23 @@ export default function VendorSection() {
   });
   const [images, setImages] = useState<File[]>([]);
   const [previews, setPreviews] = useState<string[]>([]);
-  const [status, setStatus] = useState<Status>("idle");
-  const [apiMessage, setApiMessage] = useState("");
+
+  const resetForm = () => {
+    setFormData({ vendorName: "", foodSpotName: "", city: "", famousFood: "", contactNumber: "", description: "" });
+    setImages([]);
+    setPreviews([]);
+  };
+
+  const { status, apiMessage, submit, reset } = useFormSubmit<VendorForm>({
+    url: "/api/vendor",
+    onSuccess: resetForm,
+    buildBody: (data) => {
+      const fd = new FormData();
+      Object.entries(data).forEach(([k, v]) => fd.append(k, v));
+      images.forEach((img) => fd.append("images", img));
+      return fd;
+    },
+  });
 
   const cities = [
     "Delhi", "Mumbai", "Varanasi", "Jaipur", "Agra",
@@ -44,31 +60,9 @@ export default function VendorSection() {
     setPreviews(updated.map((f) => URL.createObjectURL(f)));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("loading");
-
-    const data = new FormData();
-    Object.entries(formData).forEach(([k, v]) => data.append(k, v));
-    images.forEach((img) => data.append("images", img));
-
-    try {
-      const res = await fetch("/api/vendor", { method: "POST", body: data });
-      const json = await res.json();
-      if (res.ok && json.success) {
-        setStatus("success");
-        setApiMessage(json.message);
-        setFormData({ vendorName: "", foodSpotName: "", city: "", famousFood: "", contactNumber: "", description: "" });
-        setImages([]);
-        setPreviews([]);
-      } else {
-        setStatus("error");
-        setApiMessage(json.message || "Something went wrong. Please try again.");
-      }
-    } catch {
-      setStatus("error");
-      setApiMessage("Something went wrong. Please try again.");
-    }
+    submit(formData);
   };
 
   return (
@@ -95,7 +89,7 @@ export default function VendorSection() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Listing Submitted!</h3>
                 <p className="text-gray-500 text-base max-w-sm mx-auto">{apiMessage}</p>
                 <button
-                  onClick={() => setStatus("idle")}
+                  onClick={reset}
                   className="mt-6 text-[#E23744] font-semibold hover:underline"
                 >
                   Submit another listing
